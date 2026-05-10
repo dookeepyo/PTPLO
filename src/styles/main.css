@@ -155,7 +155,7 @@ button {
 }
 .footer_copyright{
   width: 100%;
-  padding: 48px 0;
+  padding: 48px 24px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -167,6 +167,7 @@ button {
   font-weight: 400;
   font-size: 18px;
   color: #ffffff;
+  text-align: center;
 }
 .event_left_line{
   width: 100%;
@@ -316,7 +317,6 @@ button {
   object-fit: cover;
   display: block;
   transform: scale(1);
-  transform-origin: center;
   filter: brightness(1) saturate(1);
   transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), filter 0.45s ease;
   will-change: transform, filter;
@@ -515,3 +515,169 @@ button {
     opacity: 0;
   }
 }
+
+/* Mobile */
+@media (max-width: 1720px) {
+  .footer_list {
+      flex-direction: column;
+  }
+}
+
+@media (max-width: 1500px) {
+  .profile{
+    padding: 24px;
+  }
+  .second{
+    padding: 24px;
+    gap: 12px;
+  }
+  .profile-desc h3{
+    font-size:24px;
+  }
+  .profile-desc h4{
+    font-size: 30px;
+  }
+  .profile-desc p{
+    font-size: 16px;
+  }
+  .main_left{
+    justify-content: flex-start;
+    gap: 60px;
+  }
+  .first{
+    padding-left: 20px;
+  }
+  .about_items{
+    gap: 12px;
+  }
+  .about_item p{
+    font-size: 16px;
+  }
+  .about_item lord-icon{
+    width: 35px !important;
+    height: 35px !important;
+  }
+  footer span{
+    display: none;
+  }
+  .footer_inner {
+      padding: 12px;
+      padding-left: 28px;
+      gap: 30px;
+  }
+  .footer_section{
+    gap: 12px;
+  }
+  .footer_section h2{
+    font-size: 22px;
+  }
+  .footer_item a{
+    font-size: 16px;
+  }
+  .footer_list{
+    gap: 12px;
+  }
+  .footer_copyright{
+    padding: 12px;
+    padding-top: 24px;
+  }
+  .portfolio {
+      width: 100%;
+      height: 390px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 24px;
+  }
+  .portfolio{
+    height: 330px;
+    gap: 12px;
+  }
+  .portfolio_infor{
+    gap: 12px;
+  }
+  .portfolio_infor h1{
+    font-size: 20px;
+  }
+  .portfolio_txt2{
+    gap: 6px;
+  }
+  .portfolio_txt2 p{
+    font-size: 16px;
+  }
+  .portfolio_header h1{
+    font-size: 20px;
+  }
+  .footer_copyright p{
+    font-size: 16px;
+  }
+}
+@media (max-width: 900px) {
+  .main{
+    flex-direction: column;
+  }
+  .main_left,.main_right{
+    width: 100%;
+  }
+  .main_left{
+    gap: 20px;
+  }
+  footer span{
+    display: block;
+  }
+  .footer_inner{
+    padding: 32px 24px;
+  }
+  .footer_section h2{
+    font-size: 18px;
+  }
+  .footer_section{
+    gap: 6px;
+  }
+  .footer_copyright{
+    padding: 0;
+  }
+  .footer_copyright p{
+    display: none;
+  }
+  .first{
+    gap: 24px;
+    justify-content: center;
+    padding: 0;
+  }
+  .portfolio_header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .portfolio {
+    padding: 18px;
+    height: 375px;
+  }
+  .portfolio_nav{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .second h1{
+    font-size: 20px;
+  }
+  .about_item p{
+    font-size: 14px;
+  }
+  .about_item ul li{
+    font-size: 14px;
+  }
+  .about_item lord-icon{
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .second{
+    gap: 24px;
+  }
+  .about_items {
+    gap: 24px;
+  }
+}
+

@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKEA</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        
+        <section class="sec sec1">
+            <div class="hamb-menu">
+                <div class="hamb-menu-top">
+                    <div class="header-logo">
+                        <a href="#">
+                            <svg width="100" height="40" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd"><path fill="#0058AB" d="M99.986 40H0V0h100v40z"/><path d="M2 20c0 9.833 20.116 18 48.007 18S98 29.833 98 20 77.884 2 50.007 2C22.131 2 2 10.167 2 20z" fill="#FBD914"/><path d="M46.448 26.005c.315.447.66.867 1.06 1.245h-10.82c0-.42-.416-1.273-.875-1.945a2119.01 2119.01 0 01-2.938-4.35v5.05c0 .42 0 .825.215 1.245h-9.015c.215-.42.215-.826.215-1.245V14c0-.42 0-.826-.215-1.245h9.015c-.215.42-.215.825-.215 1.245v5.246s2.88-3.665 3.54-4.519c.502-.643 1.118-1.553 1.118-1.972h9.402c-.645.42-1.361 1.175-1.949 1.874l-3.44 4.1s4.329 6.45 4.902 7.275zM49.286 14v12.004c0 .42 0 .825-.215 1.245h17.4v-4.03c-.43.21-.846.21-1.276.21h-7.324v-1.902h7.037v-3.05h-7.037V16.56h7.324c.43 0 .846 0 1.276.196v-4.015h-17.4c.215.433.215.84.215 1.259zm41.292 12.004c.144.461.387.881.703 1.245H81.85c.043-.42-.115-.826-.287-1.245 0 0-.143-.336-.344-.826l-.086-.21h-5.432l-.086.224s-.158.406-.301.826c-.143.42-.301.825-.244 1.245h-7.438a3.64 3.64 0 00.673-1.245l4.458-12.004c.157-.42.315-.826.258-1.245h12.57c-.115.42.114.825.272 1.245.372.91 4.4 11.178 4.715 11.99zm-10.635-4.1l-1.318-3.357a7.288 7.288 0 01-.287-.952 5.501 5.501 0 01-.258.952c-.043.14-.602 1.609-1.247 3.357h3.11zm-60.14-9.15H10c.215.42.215.826.215 1.246v12.004c0 .42 0 .825-.215 1.245h9.804c-.215-.42-.215-.826-.215-1.245V14c0-.42 0-.826.215-1.245zm67.765 1.148c-.043-1.021.774-1.875 1.82-1.903h.13c1.06-.014 1.934.798 1.949 1.833v.07c.028 1.05-.817 1.93-1.906 1.959-1.075.028-1.978-.798-2.007-1.861.014-.028.014-.07.014-.098zm.387 0c0 .84.703 1.525 1.563 1.525s1.562-.686 1.562-1.525c0-.84-.702-1.525-1.562-1.525-.832-.028-1.534.602-1.563 1.413v.112zm1.176 1.133h-.344v-2.294h.874a.74.74 0 01.73.741c0 .28-.157.532-.415.672l.502.881h-.387l-.459-.811h-.501v.811zm0-1.133h.473c.229.014.43-.154.43-.378s-.158-.42-.387-.42h-.516v.798z" fill="#0058A3" fill-rule="nonzero"/></g></svg>
+                        </a>
+                    </div>
+                    <div class="outbtn">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="hamb-menu-mid">
+                    <ul>
+                        <li><a href="#">IKEA</a></li>
+                        <li><a href="#">PRODUCT</a></li>
+                        <li><a href="#">PROMOTION</a></li>
+                        <li><a href="#">SERVICE</a></li>
+                    </ul>
+                </div>
+                <div class="hamb-menu-bot">
+                    <div class="hamb-menu-bot-wrap">
+                        <a href="#">FAQ</a>
+                        <a href="#">BUSINESS</a>
+                        <a href="#">NEWS</a>
+                        <a href="#">VALUE</a>
+                    </div>
+                </div>
+            </div>
+            <header>
+                <div class="header-logo-wrap">
+                    <div class="header-logo">
+                        <a href="#">
+                            <svg width="100" height="40" viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g fill="none" fill-rule="evenodd"><path fill="#0058AB" d="M99.986 40H0V0h100v40z"/><path d="M2 20c0 9.833 20.116 18 48.007 18S98 29.833 98 20 77.884 2 50.007 2C22.131 2 2 10.167 2 20z" fill="#FBD914"/><path d="M46.448 26.005c.315.447.66.867 1.06 1.245h-10.82c0-.42-.416-1.273-.875-1.945a2119.01 2119.01 0 01-2.938-4.35v5.05c0 .42 0 .825.215 1.245h-9.015c.215-.42.215-.826.215-1.245V14c0-.42 0-.826-.215-1.245h9.015c-.215.42-.215.825-.215 1.245v5.246s2.88-3.665 3.54-4.519c.502-.643 1.118-1.553 1.118-1.972h9.402c-.645.42-1.361 1.175-1.949 1.874l-3.44 4.1s4.329 6.45 4.902 7.275zM49.286 14v12.004c0 .42 0 .825-.215 1.245h17.4v-4.03c-.43.21-.846.21-1.276.21h-7.324v-1.902h7.037v-3.05h-7.037V16.56h7.324c.43 0 .846 0 1.276.196v-4.015h-17.4c.215.433.215.84.215 1.259zm41.292 12.004c.144.461.387.881.703 1.245H81.85c.043-.42-.115-.826-.287-1.245 0 0-.143-.336-.344-.826l-.086-.21h-5.432l-.086.224s-.158.406-.301.826c-.143.42-.301.825-.244 1.245h-7.438a3.64 3.64 0 00.673-1.245l4.458-12.004c.157-.42.315-.826.258-1.245h12.57c-.115.42.114.825.272 1.245.372.91 4.4 11.178 4.715 11.99zm-10.635-4.1l-1.318-3.357a7.288 7.288 0 01-.287-.952 5.501 5.501 0 01-.258.952c-.043.14-.602 1.609-1.247 3.357h3.11zm-60.14-9.15H10c.215.42.215.826.215 1.246v12.004c0 .42 0 .825-.215 1.245h9.804c-.215-.42-.215-.826-.215-1.245V14c0-.42 0-.826.215-1.245zm67.765 1.148c-.043-1.021.774-1.875 1.82-1.903h.13c1.06-.014 1.934.798 1.949 1.833v.07c.028 1.05-.817 1.93-1.906 1.959-1.075.028-1.978-.798-2.007-1.861.014-.028.014-.07.014-.098zm.387 0c0 .84.703 1.525 1.563 1.525s1.562-.686 1.562-1.525c0-.84-.702-1.525-1.562-1.525-.832-.028-1.534.602-1.563 1.413v.112zm1.176 1.133h-.344v-2.294h.874a.74.74 0 01.73.741c0 .28-.157.532-.415.672l.502.881h-.387l-.459-.811h-.501v.811zm0-1.133h.473c.229.014.43-.154.43-.378s-.158-.42-.387-.42h-.516v.798z" fill="#0058A3" fill-rule="nonzero"/></g></svg>
+                        </a>
+                    </div>
+                </div>
+                <nav class="header-ybox">
+                    <ul class="header-menu">
+                        <li><a href="#">IKEA</a></li>
+                        <li><a href="#">Product</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li><a href="#">Service</a></li>
+                    </ul>
+                    <div class="header-plus">
+                        <div class="plus-icon-wrap">
+                            <span class="plus-stick"></span>
+                            <span class="plus-stick"></span>
+                        </div>
+                    </div>
+                    <div class="m-header-hamb">
+                        <div class="hamb-stick"></div>
+                        <div class="hamb-stick"></div>
+                        <div class="hamb-stick"></div>
+                    </div>  
+                </nav>
+            </header>
+            <div class="sec1-bg">
+                <img src="./img/newsroom-b-1.jpg" alt="배너이미지">
+                <img src="./img/IKEA-Logo2.png" alt="로고텍스트이미지">
+            </div>
+            <div class="sec1-tab">
+                <div class="sec1-tab-top">
+                    <div class="sec1-tab-top-txtwrap">
+                        <span>18 Apr 2022</span>
+                        <p>IKEA FESTIVAL</p>
+                    </div>
+                    <div class="sec1-tab-top-hov">
+                        <img src="./img/right-arrow.png" alt="화살표이미지">
+                    </div>
+                </div>
+                <div class="sec1-tab-bot">
+                    <div class="sec1-tab-bot-cont">
+                        <div class="offline-title">
+                            <p>OFFLINE IKEA</p>
+                            <span>find your closest IKEA by entering address</span>
+                        </div>
+                        <div class="offline-address">
+                            <span>Address</span>
+                            <input type="text" placeholder="type your address">
+                        </div>
+                        <div class="offline-submit">
+                            <p>Find</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec1-bot">
+                <div class="m-sec1-bot">
+                    <div class="m-sec1-bot-content">
+                        <p>OFFLINE IKEA</p>
+                        <div></div>
+                    </div>
+                    <div class="m-sec1-bot-content">
+                        <p>IKEA FESTIVAL</p>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="sec1-bot-img">
+                    <img src="./img/IKEA-Logo2.png" alt="로고텍스트이미지">
+                </div>
+            </div>
+            
+        </section>
+        <section class="sec sec2" data-aos="fade-up" data-aos-offset="300" data-aos-duration="600">
+            <div class="sec2-title">
+                <h3>Product Room</h3>
+                <a href="#" class="more-btn"><p>more</p></a href="#">
+            </div>
+            <div class="m-sec2-cont1">
+
+            </div>
+            <div class="sec2-cont1">
+                <div class="sec2-cont1-left">
+                    <img src="./img/sec-2-1.JPG" alt="">
+                </div>
+                <div class="sec2-cont1-right">
+                    <div class="product-left">
+                        <div class="product" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800">
+                            <a href="#">
+                                <div class="product-img"></div>
+                                <div class="product-txt-wrap">
+                                    <p>NYMANE</p>
+                                    <span>mini mppe block 42x18x32 cm</span>
+                                    <p>39,900</p>
+                                    <div class="product-iconbox">
+                                        <div class="product-cart"></div>
+                                        <div class="product-like"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product" data-aos-offset="-300" data-aos="fade-down" data-aos-duration="800" data-aos-delay="1200">
+                            <a href="#">
+                                <div class="product-img"></div>
+                                <div class="product-txt-wrap">
+                                    <p>SKADIS</p>
+                                    <span>mini mppe block 42x18x32 cm</span>
+                                    <p>35,500</p>
+                                    <div class="product-iconbox">
+                                        <div class="product-cart"></div>
+                                        <div class="product-like"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="product-right">
+                        <div class="product" data-aos="fade-down" data-aos-duration="800" data-aos-delay="1000">
+                            <a href="#">
+                                <div class="product-img"></div>
+                                <div class="product-txt-wrap">
+                                    <p>SMARRA</p>
+                                    <span>mini mppe block 42x18x32 cm</span>
+                                    <p>17,600</p>
+                                    <div class="product-iconbox">
+                                        <div class="product-cart"></div>
+                                        <div class="product-like"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="product" data-aos-offset="-300" data-aos="fade-down" data-aos-duration="800" data-aos-delay="1400">
+                            <a href="#">
+                                <div class="product-img"></div>
+                                <div class="product-txt-wrap">
+                                    <p>MOPPE blob</p>
+                                    <span>mini mppe block 42x18x32 cm</span>
+                                    <p>37,900</p>
+                                    <div class="product-iconbox">
+                                        <div class="product-cart"></div>
+                                        <div class="product-like"></div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2-cont2" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+                <div class="sec2-cont2-in active">
+                    <div class="sec2-cont2-in-img">
+                        <img src="./img/sec-2.JPG" alt="">
+                    </div>
+                    <div class="sec2-cont2-dot-wrap">
+                        <div class="sec2-cont2-dot">
+                            <div class="dot-plus">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="sec2-cont2-dot">
+                            <div class="dot-plus">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="sec2-cont2-dot">
+                            <div class="dot-plus">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="sec2-cont2-dot">
+                            <div class="dot-plus">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="sec2-cont2-dot">
+                            <div class="dot-plus">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dot-info-wrap">
+                        <div class="dot-info">
+                            <p>VIMLE</p>
+                            <p>849,000</p>
+                            <span>CONCEPT COLOR</span>
+                            <ul class="concept-color">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="dot-info">
+                            <p>TINGBY</p>
+                            <p>49,000</p>
+                            <span>CONCEPT COLOR</span>
+                            <ul class="concept-color">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="dot-info">
+                            <p>KUGGIS</p>
+                            <p>29,900</p>
+                            <span>CONCEPT COLOR</span>
+                            <ul class="concept-color">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="dot-info">
+                            <p>SKADIS</p>
+                            <p>29,900</p>
+                            <span>CONCEPT COLOR</span>
+                            <ul class="concept-color">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="dot-info">
+                            <p>FLANTAN</p>
+                            <p>90,000</p>
+                            <span>CONCEPT COLOR</span>
+                            <ul class="concept-color">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2-cont2-in"></div>
+                <div class="sec2-cont2-in"></div>
+                <div class="sec2-cont2-in"></div>
+            </div>
+            <div class="sec2-cont3">
+                <div class="room">
+                    <div class="room-filter"></div>
+                    <p>OFFICE</p>
+                </div>
+                <div class="room">
+                    <div class="room-filter"></div>
+                    <p>DINING</p>
+                </div>
+                <div class="room">
+                    <div class="room-filter"></div>
+                    <p>BED</p>
+                </div>
+                <div class="room">
+                    <div class="room-filter"></div>
+                    <p>BATH</p>
+                </div>
+                <div class="m-room-center">Room</div>
+            </div>
+        </section>
+        <section class="sec sec3">
+            <div class="sec3-title">
+                <div class="sec3-title-left">
+                    <h3>IKEA Promotion</h3>
+                    <span>acting Events & promotions</span>
+                </div>
+                <a href="#" class="more-btn"><p>more</p></a href="#">
+            </div>
+            <div class="sec3-top" data-aos="fade-left" data-aos-offset="200" data-aos-duration="800">
+                <div class="sec3-top-wrap swiper mySwiper">
+                    <div class="sec3-top-wrap-in swiper-wrapper">
+                        <div class="sec3-promotion swiper-slide active">
+                            <div class="sec3-promotion-img">
+                                <img src="./img/promotion-1.PNG" alt="프로모션 이미지">
+                            </div>
+                            <div class="sec3-promotion-txt">
+                                <p>Opening Sale in Eunpyoung IKEA</p>
+                                <div class="promotion-txt-arrow">
+                                    <img src="./img/right-arrow.png" alt="화살표 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec3-promotion swiper-slide">
+                            <div class="sec3-promotion-img">
+                                <img src="./img/promotion-2.jpg" alt="프로모션 이미지">
+                            </div>
+                            <div class="sec3-promotion-txt">
+                                <p>Opening Sale in Eunpyoung IKEA</p>
+                                <div class="promotion-txt-arrow">
+                                    <img src="./img/right-arrow.png" alt="화살표 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec3-promotion swiper-slide">
+                            <div class="sec3-promotion-img">
+                                <img src="./img/promotion-3.PNG" alt="프로모션 이미지">
+                            </div>
+                            <div class="sec3-promotion-txt">
+                                <p>Opening Sale in Eunpyoung IKEA</p>
+                                <div class="promotion-txt-arrow">
+                                    <img src="./img/right-arrow.png" alt="화살표 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec3-promotion swiper-slide">
+                            <div class="sec3-promotion-img">
+                                <img src="./img/promotion-4.jpg" alt="프로모션 이미지">
+                            </div>
+                            <div class="sec3-promotion-txt">
+                                <p>Opening Sale in Eunpyoung IKEA</p>
+                                <div class="promotion-txt-arrow">
+                                    <img src="./img/right-arrow.png" alt="화살표 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec3-promotion swiper-slide">
+                            <div class="sec3-promotion-img">
+                                <img src="./img/promotion-5.jpg" alt="프로모션 이미지">
+                            </div>
+                            <div class="sec3-promotion-txt">
+                                <p>Opening Sale in Eunpyoung IKEA</p>
+                                <div class="promotion-txt-arrow">
+                                    <img src="./img/right-arrow.png" alt="화살표 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide sec3-prom-none">
+                            <div class="sec3-promotion-img">
+                                <img src="./img/promotion-5.jpg" alt="프로모션 이미지">
+                            </div>
+                            <div class="sec3-promotion-txt">
+                                <p>Opening Sale in Eunpyoung IKEA</p>
+                                <div class="promotion-txt-arrow">
+                                    <img src="./img/right-arrow.png" alt="화살표 이미지">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-slide sec3-prom-none-ext">
+                            <div class="sec3-promotion-img">
+                                <img src="./img/promotion-5.jpg" alt="프로모션 이미지">
+                            </div>
+                            <div class="sec3-promotion-txt">
+                                <p>Opening Sale in Eunpyoung IKEA</p>
+                                <div class="promotion-txt-arrow">
+                                    <img src="./img/right-arrow.png" alt="화살표 이미지">
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="sec3-top-scrollbar">
+                    <div class="sec3-top-scrollbar-in"></div>
+                </div>
+            </div>
+            <div class="sec3-bot">
+                <div class="sec3-bot-article" data-aos="fade-up" data-aos-offset="300" data-aos-duration="800">
+                    <div class="sec3-bot-img">
+                        <img src="./img/promotion-bot-1.JPG" alt="프로모션 이미지">
+                    </div>
+                    <div class="sec3-bot-txt">
+                        <p>IKEA FOOD</p>
+                        <span>Enjoy with a healthy food in IKEA</span>
+                    </div>
+                </div>
+                <div class="sec3-bot-article" data-aos="fade-up" data-aos-offset="300" data-aos-duration="800" data-aos-delay="300">
+                    <div class="sec3-bot-img">
+                        <img src="./img/promotion-bot-2.jpg" alt="프로모션 이미지">
+                    </div>
+                    <div class="sec3-bot-txt">
+                        <p>IKEA STORAGE</p>
+                        <span>For effective arrangement, you will need ikea storage</span>
+                    </div>
+                </div>
+                <div class="sec3-bot-article" data-aos="fade-up" data-aos-offset="300" data-aos-duration="800" data-aos-delay="600">
+                    <div class="sec3-bot-img">
+                        <img src="./img/promotion-bot-3.PNG" alt="프로모션 이미지">
+                    </div>
+                    <div class="sec3-bot-txt">
+                        <p>IKEA SOLUTION</p>
+                        <span>Ikea is producing solutions about houseliving problems.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec sec4">
+            <div class="sec4-bg"></div>
+            <div class="sec4-title">
+                <h3>IKEA News Room</h3>
+            </div>
+            <div class="sec4-t">
+                <div class="sec4-news-left">
+                    <div class="news-card" data-aos="flip-right" data-aos-duration="800" data-aos-offset="300">
+                        <div class="news-card-img">
+                            <img src="./img/newsroom-1.PNG" alt="뉴스이미지">
+                        </div>
+                        <div class="news-card-txt">
+                            <p>Highlights from the IKEA</p>
+                            <p>Sustainability Report FY21</p>
+                            <span>The financial year 2021 was a year of both challenges 
+                                and important movements towards the IKEA 2030
+                                commitments. Significant sustainability achievements
+                                include improvements throughout the value chain to further 
+                                reduce the IKEA climate footprint in absolute terms 
+                                compared to baseline FY16, as well as the launch 
+                                of a public online circular product design tool, 
+                                and taking a big step forward.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-card" data-aos="flip-right" data-aos-duration="800" data-aos-offset="300" data-aos-delay="200">
+                        <div class="news-card-img">
+                            <img src="./img/newsroom-2.PNG" alt="뉴스이미지">
+                        </div>
+                        <div class="news-card-txt">
+                            <p>IKEA joins other global companies</p>
+                            <p>only purchase zero emission</p>
+                            <span>IKEA joins forces with several global companies by signing the 2040 ambition statement through the collaborative platform Cargo Owners for Zero Emission Vessels, facilitated by the Aspen Institute. The ambition statement makes it clear that global transport buyers want zero-carbon shipping, and rapidly accelerating decarbonizing efforts.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-card" data-aos="flip-right" data-aos-duration="800" data-aos-offset="-200" data-aos-delay="400">
+                        <div class="news-card-img">
+                            <img src="./img/newsroom-3.PNG" alt="뉴스이미지">
+                        </div>
+                        <div class="news-card-txt">
+                            <p>Insights from new global study</p>
+                            <p>people perceive high cost</p>
+                            <span>The newly released GlobeScan research shows that people around the world express a strong desire to live healthier and more sustainable, but the majority have not made major changes. Almost half of people think it’s too expensive. These insights confirm that IKEA has an important role to play by providing affordable and desirable solutions that inspires and enables the many people to healthier, more sustainable lives.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-card" data-aos="flip-right" data-aos-duration="800" data-aos-offset="-200" data-aos-delay="600">
+                        <div class="news-card-img">
+                            <img src="./img/newsroom-4.PNG" alt="뉴스이미지">
+                        </div>
+                        <div class="news-card-txt">
+                            <p>Test period of the second</p>
+                            <p>hand IKEA shop in Sweden</p>
+                            <span>In November 2020, the world´s first second-hand IKEA shop opened in Eskilstuna, Sweden, with the purpose to test and develop how the second-hand segment can contribute to prolong the life of the IKEA products and contribute to moving IKEA towards a circular business.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec4-news-right">
+                    <ul class="sec4-news-right-cont">
+                        <li>
+                            <div class="txt-wrap">
+                                <span>FEATURED</span>
+                                <p>NEWS</p>
+                            </div>
+                            <img src="./img/right-arrow-black.png" alt="화살표">
+                        </li>
+                        <li>
+                            <div class="txt-wrap">
+                                <span>LATEST</span>
+                                <p>NEWS</p>
+                            </div>
+                            <img src="./img/right-arrow-black.png" alt="화살표">
+                        </li> 
+                    </ul>
+                </div>  
+            </div>
+            <div class="sec4-m">
+                <a href="#" class="more-btn"><p>more</p></a href="#">
+            </div>
+            <div class="sec4-side">
+                <div class="side-line">
+                    <div class="side-line-dot"></div>
+                </div>
+            </div>
+            <div class="sec4-b">
+                <div class="news-cont">
+                    <div class="news-cont-img" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">
+                        <img src="./img/newsroom-b-1.jpg" alt="뉴스이미지">
+                    </div>
+                    <div class="news-cont-txt">
+                        <div class="txt-wrap">
+                            <div class="news-txt-bg" data-aos="fade-left" data-aos-offset="00" data-aos-duration="800" data-aos-delay="400"></div>
+                            <div class="news-txt-wrap" data-aos="fade-right" data-aos-offset="-100" data-aos-duration="800" data-aos-delay="600">
+                                <p>Making an icon more sustainable</p>
+                                <span>In an attempt to make the iconic POÄNG chair more sustainable, IKEA has 
+                                    launched a pilot to use wood wool in the cushion instead of foam. Foam
+                                    is often not biodegradable, andas a part of the commitment to only use renewable
+                                    and recycled materials by 2030, wood wool can be a smallstep in the right direction.
+                                    We spoke to Piotr Jakubiak about replacing a traditional seat.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-cont">
+                    <div class="news-cont-img" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+                        <img src="./img/newsroom-b-2.jpg" alt="뉴스이미지">
+                    </div>
+                    <div class="news-cont-txt">
+                        <div class="txt-wrap">
+                            <div class="news-txt-bg" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800" data-aos-delay="400"></div>
+                            <div class="news-txt-wrap" data-aos="fade-left" data-aos-offset="100" data-aos-duration="800" data-aos-delay="600">
+                                <p>COP26: pre-launch of new guide</p>
+                                <span>Today, IKEA and partners are introducing a practical guide for businesses on how
+                                    to measure air pollution across value chains. The guide will support companies to
+                                    understand their impact on air quality and to take necessary actions to reduce
+                                    their emissions. The guide is being developed by the Climate and Clean Air
+                                    Coalition and Stockholm Environment Institute (SEI), in co-operation with IKEA
+                                    with the ambition to contribute to better health for people and the planet.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="footer">
+            <div class="footer-wrap">
+                <div class="footer-left">
+                    <ul class="footer-left-nav">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Values</a></li>
+                    </ul>
+                    <div class="footer-txt-wrap">
+                        <span>The IKEA vision – why we are here
+                            Our vision is "to create a better everyday life for the many people". 
+                            Every word in this statement gives us inspiration and guidance.</span>
+                    </div>
+                </div> 
+                <div class="footer-right">
+                    <div class="footer-right-content">
+                        <h3>Social Media</h3>
+                        <ul class="social-icon">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-b">
+                    <div class="footer-b-left">
+                        <p>© Inter IKEA Systems B.V. 1999 - 2021</p>
+                    </div>
+                    <div class="footer-b-right">
+                        <p>Cookie Information</p>
+                        <p>Privacy Statement</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

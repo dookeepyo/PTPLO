@@ -31,8 +31,26 @@ function Portfolio({ sectionId, title, items }) {
           prevEl: `.${prevClass}`,
           nextEl: `.${nextClass}`,
         }}
-        slidesPerView={4}
-        spaceBetween={40}
+        slidesPerView={1}
+        spaceBetween={24}
+        breakpoints={{
+          901: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          1301: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+          1501: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1721: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        }}
         className='portfolio_swiper'
       >
         {items.map((item) => (
