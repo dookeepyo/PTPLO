@@ -1,3 +1,5 @@
+const imageBase = `${import.meta.env.BASE_URL}img/`;
+
 export const portfolioSections = [
   {
     id: 'training',
@@ -5,7 +7,7 @@ export const portfolioSections = [
     items: [
       {
         title: '「 FNC 」',
-        image: '/public/img/FNC.png',
+        image: `${imageBase}FNC.png`,
         alt: 'FNC',
         link: '/FNC/index.html',
         type: 'info',
@@ -14,7 +16,7 @@ export const portfolioSections = [
       },
       {
         title: '「 IKEA 」',
-        image: '/public/img/IKEA.png',
+        image: `${imageBase}IKEA.png`,
         alt: 'IKEA',
         link: '/IKEA/index.html',
         type: 'info',
@@ -29,7 +31,7 @@ export const portfolioSections = [
     items: [
       {
         title: '「 삼영플랜트 」',
-        image: '/public/img/syplant.png',
+        image: `${imageBase}syplant.png`,
         alt: '삼영플랜트',
         link: 'http://syplant.co.kr/',
         type: 'desc',
@@ -37,7 +39,7 @@ export const portfolioSections = [
       },
       {
         title: '「 케이프로젝트 」',
-image: '/public/img/kproject.png',
+image: `${imageBase}kproject.png`,
         alt: '케이프로젝트',
         link: 'http://www.kproject.co.kr',
         type: 'desc',
@@ -45,7 +47,7 @@ image: '/public/img/kproject.png',
       },
       {
         title: '「 피앤씨 」',
-        image: '/public/img/DYFLON.png',
+        image: `${imageBase}DYFLON.png`,
         alt: '피앤씨',
         link: 'http://pncsite.iwinv.net/index.html',
         type: 'info',
@@ -60,7 +62,7 @@ image: '/public/img/kproject.png',
     items: [
       {
         title: '「 은평구작은도서관 」',
-        image: '/public/img/eplib.png',
+        image: `${imageBase}eplib.png`,
         alt: '은평구작은도서관',
         link: 'https://lib.eplib.or.kr:8451/',
         type: 'info',
@@ -69,7 +71,7 @@ image: '/public/img/kproject.png',
       },
       {
         title: '「 ISAMS 2023 」',
-        image: '/public/img/isams2023.png',
+        image: `${imageBase}isams2023.png`,
         alt: 'ISAMS2023',
         link: 'https://isams.kr/2023/',
         type: 'info',
@@ -78,7 +80,7 @@ image: '/public/img/kproject.png',
       },
       {
         title: '「 와우 매니지먼트 」',
-        image: '/public/img/wow.png',
+        image: `${imageBase}wow.png`,
         alt: '와우 매니지먼트',
         link: 'http://wow-mg.com/web/',
         type: 'info',
@@ -87,7 +89,7 @@ image: '/public/img/kproject.png',
       },
       {
         title: '「 AJ 탕전원 」',
-        image: '/public/img/ajherb.png',
+        image: `${imageBase}ajherb.png`,
         alt: '관리 페이지',
         link: 'https://www.ajherb.co.kr/shop/main',
         type: 'info',
@@ -96,7 +98,7 @@ image: '/public/img/kproject.png',
       },
       {
         title: '「 PBA 」',
-        image: '/public/img/PBA.png',
+        image: `${imageBase}PBA.png`,
         alt: 'PBA',
         link: 'https://www.pbatour.org/ko/index',
         type: 'info',
@@ -105,7 +107,7 @@ image: '/public/img/kproject.png',
       },
       {
         title: '「 PBA 마이크로 리뉴얼 」',
-        image: '/public/img/PBATOUR.png',
+        image: `${imageBase}PBATOUR.png`,
         alt: 'PBA 마이크로 리뉴얼',
         link: 'http://billpba.777.co.kr/mob/contest_new/admin/',
         type: 'info',
@@ -120,7 +122,7 @@ image: '/public/img/kproject.png',
     items: [
       {
         title: '「  」',
-        image: '/public/img/syplant.png',
+        image: `${imageBase}syplant.png`,
         alt: '',
         link: 'http://syplant.co.kr/',
         type: 'desc',
@@ -128,7 +130,7 @@ image: '/public/img/kproject.png',
       },
       {
         title: '「 」',
-        image: '/public/img/kproject.png',
+        image: `${imageBase}kproject.png`,
         alt: '',
         link: 'http://www.kproject.co.kr',
         type: 'desc',
@@ -136,7 +138,7 @@ image: '/public/img/kproject.png',
       },
       {
         title: '「  」',
-        image: '/public/img/DYFLON.png',
+        image: `${imageBase}DYFLON.png`,
         alt: '',
         link: 'http://pncsite.iwinv.net/index.html',
         type: 'info',
