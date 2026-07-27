@@ -1,6 +1,14 @@
 import LineReveal from './LineReveal';
 
 function Footer() {
+  const handleResumeDownload = (event) => {
+    const shouldDownload = window.confirm('이력서를 다운받으시겠습니까?');
+
+    if (!shouldDownload) {
+      event.preventDefault();
+    }
+  };
+
   return(
     <footer className='footer'>
       <div className='footer_inner'>
@@ -8,7 +16,13 @@ function Footer() {
           <h2>RESUME</h2>
           <div className='footer_item'>
             <lord-icon src='https://cdn.lordicon.com/ogkplaef.json' trigger='loop' delay='1000' colors='primary:#ffffff'></lord-icon>
-            <a href='./resume.png' download='resume.png'>DOWNLOAD</a>
+            <a
+              href='./resume.png'
+              download='resume.png'
+              onClick={handleResumeDownload}
+            >
+              DOWNLOAD
+            </a>
           </div>
         </div>
 

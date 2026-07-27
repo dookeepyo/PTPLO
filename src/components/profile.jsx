@@ -50,7 +50,16 @@ function Profile() {
 
   return (
     <div className='profile'>
-      <div className='profile-image'></div>
+      <div className='profile-image'>
+        <video
+          className='profile-video'
+          src='./main.mp4'
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      </div>
 
       <div className='profile-desc'>
         <h3>안녕하세요!</h3>
