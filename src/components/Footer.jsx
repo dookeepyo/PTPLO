@@ -8,7 +8,7 @@ function Footer() {
           <h2>RESUME</h2>
           <div className='footer_item'>
             <lord-icon src='https://cdn.lordicon.com/ogkplaef.json' trigger='loop' delay='1000' colors='primary:#ffffff'></lord-icon>
-            <a href='#'>DOWNLOAD</a>
+            <a href='./resume.png' download='resume.png'>DOWNLOAD</a>
           </div>
         </div>
 
