@@ -5,20 +5,75 @@ const cursor = document.getElementById('cursor');
     el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
   });
 
+  const heroGrid = document.querySelector('.hero-bg-grid');
+  if(heroGrid && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    const gridSize = 44;
+    const lightCount = 12;
+
+    for(let i = 0; i < lightCount; i++){
+      const light = document.createElement('span');
+      const horizontal = i < 7;
+      light.className = `grid-light ${horizontal ? 'horizontal' : 'vertical'}`;
+      light.style.setProperty('--duration', `${8 + Math.random() * 8}s`);
+      light.style.setProperty('--delay', `${-Math.random() * 14}s`);
+
+      if(horizontal){
+        const maxRows = Math.max(1, Math.floor(heroGrid.offsetHeight / gridSize));
+        light.style.top = `${Math.floor(Math.random() * maxRows) * gridSize}px`;
+      }else{
+        const maxColumns = Math.max(1, Math.floor(heroGrid.offsetWidth / gridSize));
+        light.style.left = `${Math.floor(Math.random() * maxColumns) * gridSize}px`;
+      }
+
+      heroGrid.appendChild(light);
+    }
+  }
+
   const codeWindow = document.getElementById('codeWindow');
   if(codeWindow){
+    let targetRotateX = 0;
+    let targetRotateY = 0;
+    let currentRotateX = 0;
+    let currentRotateY = 0;
+    let tiltFrame = null;
+    let isPointerInside = false;
+
+    function animateCodeTilt(){
+      currentRotateX += (targetRotateX - currentRotateX) * 0.12;
+      currentRotateY += (targetRotateY - currentRotateY) * 0.12;
+      codeWindow.style.setProperty('transform', `perspective(650px) rotateX(${currentRotateX}deg) rotateY(${currentRotateY}deg) scale(1.015)`, 'important');
+
+      const isMoving = Math.abs(targetRotateX - currentRotateX) > 0.01 || Math.abs(targetRotateY - currentRotateY) > 0.01;
+      if(isPointerInside || isMoving){
+        tiltFrame = requestAnimationFrame(animateCodeTilt);
+      }else{
+        currentRotateX = 0;
+        currentRotateY = 0;
+        codeWindow.style.setProperty('transform', 'perspective(650px) rotateX(0deg) rotateY(0deg) scale(1)', 'important');
+        codeWindow.classList.remove('is-tilting');
+        tiltFrame = null;
+      }
+    }
+
     codeWindow.addEventListener('mousemove', e => {
       const r = codeWindow.getBoundingClientRect();
       const px = (e.clientX - r.left) / r.width - 0.5;
       const py = (e.clientY - r.top) / r.height - 0.5;
+      isPointerInside = true;
+      targetRotateY = px * 18;
+      targetRotateX = -py * 18;
       codeWindow.classList.add('is-tilting');
-      codeWindow.style.setProperty('--code-rotate-y', `${px * 8}deg`);
-      codeWindow.style.setProperty('--code-rotate-x', `${-py * 8}deg`);
+      codeWindow.style.setProperty('--code-glare-x', `${(px + 0.5) * 100}%`);
+      codeWindow.style.setProperty('--code-glare-y', `${(py + 0.5) * 100}%`);
+      if(!tiltFrame) tiltFrame = requestAnimationFrame(animateCodeTilt);
     });
     codeWindow.addEventListener('mouseleave', () => {
-      codeWindow.classList.remove('is-tilting');
-      codeWindow.style.setProperty('--code-rotate-y', '0deg');
-      codeWindow.style.setProperty('--code-rotate-x', '0deg');
+      isPointerInside = false;
+      targetRotateX = 0;
+      targetRotateY = 0;
+      codeWindow.style.setProperty('--code-glare-x', '50%');
+      codeWindow.style.setProperty('--code-glare-y', '50%');
+      if(!tiltFrame) tiltFrame = requestAnimationFrame(animateCodeTilt);
     });
   }
 
@@ -239,4 +294,39 @@ const cursor = document.getElementById('cursor');
     if(e.key === 'Escape') lightbox.classList.remove('open');
     if(lightbox.classList.contains('open') && e.key === 'ArrowLeft') moveLightboxImage(-1);
     if(lightbox.classList.contains('open') && e.key === 'ArrowRight') moveLightboxImage(1);
+  });
+
+  const resumeModal = document.getElementById('resumeModal');
+  const resumeOpen = document.getElementById('resumeOpen');
+  const resumeClose = document.getElementById('resumeClose');
+  const resumePrint = document.getElementById('resumePrint');
+
+  function openResume(){
+    resumeModal.classList.add('open');
+    resumeModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-lock');
+    resumeClose.focus();
+  }
+
+  function closeResume(){
+    resumeModal.classList.remove('open');
+    resumeModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-lock');
+    resumeOpen.focus();
+  }
+
+  resumeOpen.addEventListener('click', openResume);
+  resumeClose.addEventListener('click', closeResume);
+  resumeModal.addEventListener('click', e => { if(e.target === resumeModal) closeResume(); });
+  window.addEventListener('keydown', e => {
+    if(e.key === 'Escape' && resumeModal.classList.contains('open')) closeResume();
+  });
+
+  resumePrint.addEventListener('click', () => {
+    const resumeUrl = new URL('img/resume.png', window.location.href).href;
+    const printWindow = window.open('', '_blank');
+    if(!printWindow) return;
+    printWindow.opener = null;
+    printWindow.document.write(`<!DOCTYPE html><html><head><title>두기표 이력서</title><style>@page{margin:0}html,body{margin:0}img{display:block;width:100%;height:auto}</style></head><body><img src="${resumeUrl}" alt="두기표 이력서" onload="window.print()"></body></html>`);
+    printWindow.document.close();
   });
