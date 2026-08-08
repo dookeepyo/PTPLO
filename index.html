@@ -7,7 +7,7 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=20260808-3">
 </head>
 <body class="intro-lock">
 <noscript><style>.intro{display:none !important;}body.intro-lock{overflow:auto !important;}</style></noscript>
@@ -53,8 +53,8 @@
       <h1 class="hero-title" id="heroTitle">3년 6개월의 경험으로<br>완성하는 웹 퍼블리싱</h1>
       <p class="hero-sub" data-reveal>사용자 경험을 고려한 시맨틱 마크업과 반응형 UI, 자연스러운 인터랙션을 구현하는 웹 퍼블리셔 두기표입니다.</p>
       <div class="hero-actions" data-reveal>
-        <a href="#work" class="btn-primary">프로젝트 보기 →</a>
-        <a href="#contact" class="btn-secondary">연락하기 ✉</a>
+        <a href="#work" class="btn-primary">프로젝트 보기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></a>
+        <button type="button" class="btn-secondary" id="resumeOpen">이력서 보기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h8l4 4v14H6V3Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></button>
       </div>
       <div class="hero-stats" data-reveal>
         <div><strong>3Y 6M</strong><span>EXPERIENCE</span></div>
@@ -62,20 +62,22 @@
         <div><strong>RESPONSIVE</strong><span>UI</span></div>
       </div>
     </div>
-    <div class="code-window" id="codeWindow" data-reveal="scale">
-      <div class="code-bar">
-        <span class="cdot r"></span><span class="cdot y"></span><span class="cdot g"></span>
-        <span class="code-file">profile.tsx</span>
-      </div>
-      <div class="code-body">
-        <div class="code-line" data-reveal style="--d:.05s"><span class="c-kw">const</span> <span class="c-var">developer</span> = &#123;</div>
-        <div class="code-line" data-reveal style="--d:.18s">&nbsp;&nbsp;name: <span class="c-str">'두기표'</span>,</div>
-        <div class="code-line" data-reveal style="--d:.31s">&nbsp;&nbsp;role: <span class="c-str">'Web Publisher'</span>,</div>
-        <div class="code-line" data-reveal style="--d:.44s">&nbsp;&nbsp;stack: [<span class="c-str">'HTML'</span>, <span class="c-str">'CSS'</span>, <span class="c-str">'SCSS'</span>, <span class="c-str">'JavaScript'</span>, <span class="c-str">'jQuery'</span>, <span class="c-str">'React'</span>],</div>
-        <div class="code-line" data-reveal style="--d:.57s">&nbsp;&nbsp;focus: [<span class="c-str">'웹 표준'</span>, <span class="c-str">'반응형 UI'</span>, <span class="c-str">'크로스브라우징'</span>],</div>
-        <div class="code-line" data-reveal style="--d:.70s">&nbsp;&nbsp;passion: <span class="c-kw">true</span></div>
-        <div class="code-line" data-reveal style="--d:.83s">&#125;;</div>
-        <div class="code-line" data-reveal style="--d:.96s"><span class="c-fn">render</span>(developer)<span class="code-cursor">▍</span></div>
+    <div class="code-window-reveal" data-reveal="scale">
+      <div class="code-window" id="codeWindow">
+        <div class="code-bar">
+          <span class="cdot r"></span><span class="cdot y"></span><span class="cdot g"></span>
+          <span class="code-file">profile.tsx</span>
+        </div>
+        <div class="code-body">
+          <div class="code-line" data-reveal style="--d:.05s"><span class="c-kw">const</span> <span class="c-var">developer</span> = &#123;</div>
+          <div class="code-line" data-reveal style="--d:.18s">&nbsp;&nbsp;name: <span class="c-str">'두기표'</span>,</div>
+          <div class="code-line" data-reveal style="--d:.31s">&nbsp;&nbsp;role: <span class="c-str">'Web Publisher'</span>,</div>
+          <div class="code-line" data-reveal style="--d:.44s">&nbsp;&nbsp;stack: [<span class="c-str">'HTML'</span>, <span class="c-str">'CSS'</span>, <span class="c-str">'SCSS'</span>, <span class="c-str">'JavaScript'</span>, <span class="c-str">'jQuery'</span>, <span class="c-str">'React'</span>],</div>
+          <div class="code-line" data-reveal style="--d:.57s">&nbsp;&nbsp;focus: [<span class="c-str">'웹 표준'</span>, <span class="c-str">'반응형 UI'</span>, <span class="c-str">'크로스브라우징'</span>],</div>
+          <div class="code-line" data-reveal style="--d:.70s">&nbsp;&nbsp;passion: <span class="c-kw">true</span></div>
+          <div class="code-line" data-reveal style="--d:.83s">&#125;;</div>
+          <div class="code-line" data-reveal style="--d:.96s"><span class="c-fn">render</span>(developer)<span class="code-cursor">▍</span></div>
+        </div>
       </div>
     </div>
   </div>
@@ -481,7 +483,7 @@
       </div>
       <h2>함께 좋은 화면을 만들어볼까요?</h2>
       <p>새로운 아이디어와 협업을 기다리고 있습니다. 프로젝트 문의나 제안은 언제든지 환영합니다.</p>
-      <a href="mailto:enrlvy1022@naver.com" class="contact-btn">이메일 보내기 →</a>
+      <a href="mailto:enrlvy1022@naver.com" class="contact-btn">이메일 보내기<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
     </div>
   </div>
 </section>
@@ -527,7 +529,26 @@
   </div>
 </div>
 
-<script src="js/script.js"></script>
+<div class="resume-modal" id="resumeModal" aria-hidden="true">
+  <div class="resume-panel" role="dialog" aria-modal="true" aria-labelledby="resumeTitle">
+    <div class="resume-head">
+      <div>
+        <span class="resume-kicker">RESUME</span>
+        <h2 id="resumeTitle">두기표 이력서</h2>
+      </div>
+      <button type="button" class="resume-close" id="resumeClose" aria-label="이력서 닫기">✕</button>
+    </div>
+    <div class="resume-preview">
+      <img src="img/resume.png" alt="두기표 이력서">
+    </div>
+    <div class="resume-actions">
+      <a href="img/resume.png" download="두기표_이력서.png" class="resume-download">이력서 다운로드 ↓</a>
+      <button type="button" class="resume-print" id="resumePrint">인쇄하기</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js?v=20260808-3"></script>
 
 </body>
 </html>
